@@ -41,7 +41,7 @@ export default withFormik({
 
   // we need to post the values from the form to the server, and set the token
   // to local storage.
-  handleSubmit(values) {
+  handleSubmit(values, { resetForm }) {
     // console.log(formikBag.props);
 
     axiosWithAuth()
@@ -53,5 +53,6 @@ export default withFormik({
         console.log(err.response.data);
       });
     // console.log(values);
+    resetForm();
   }
 })(FriendsList);
