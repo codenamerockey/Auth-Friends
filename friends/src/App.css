@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .App-logo {
@@ -34,6 +34,21 @@
   }
 }
 
-Link {
-  display: inline;
+#root>div>div:nth-child(1)>a {
+  /* place holder */
+  font-size: 30px;
+}
+
+#root>div>div:nth-child(2)>a {
+  /* place holder */
+  font-size: 30px;
+}
+
+label {
+  font-size: 20px;
+}
+
+#root>div>form>button {
+  /* button */
+  margin-top: 20px
 }
